@@ -37,11 +37,9 @@
         const audio = document.getElementById('audio');
 
         // Попытка запустить аудио вместе с видео
-        video.play().then(() => {
+        video.play();
             audio.play(); // Скорее всего, браузер заблокирует это
-        }).catch(error => {
-            console.log('Автовоспроизведение аудио заблокировано:', error);
-        });
+        
     </script>
 </body>
 </html>
